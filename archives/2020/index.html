@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>数据结构——队列及其操作 · XiaoLiu&#39;s Studio</title>
+    <title>XiaoLiu&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,23 +203,12 @@
 </head>
 
     
-        <body class="post-body">
-    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/mnjic-503.github.io/" >XiaoLiu&#39;s Studio.</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">数据结构——队列及其操作</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/mnjic-503.github.io/>XiaoLiu's Studio.</a>
 </header>
@@ -231,76 +220,24 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/mnjic-503.github.io/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/mnjic-503.github.io/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-            
-            数据结构——队列及其操作
-            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                    <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "队列">队列</a>
-    
-</div>
-                
-                
-                    <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">339</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/12/13</span>
-                    
-                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
-                        <span class="iconfont-archer">&#xe602;</span>
-                        <span id="busuanzi_value_page_pv"></span>
-                    </span>
-                    
-                    <span class="shareWrapper">
-                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
-                        <span class="shareText">Share</span>
-                        <ul class="shareList">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -401,63 +338,44 @@ height:50vh;
 </script>        
         <img class="loading" src="/mnjic-503.github.io/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <meta charset="utf-8">
-<main class="main post-page">
-    <article class="article-entry">
-        <h2 id="队列介绍"><a href="#队列介绍" class="headerlink" title="队列介绍"></a>队列介绍</h2><blockquote>
-<p>&#160;&#160;&#160;&#160;队列(Queue)。队列简称队，也是一种操作受限的线性表，队列有两个基础操作，一是<strong>队头出队</strong>，一是<strong>队尾入队</strong>。其操作的特性是先入先出(First In First Out,FIFO)，故又称<strong>先入先出的线性表</strong>。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="队列的顺序存储结构"><a href="#队列的顺序存储结构" class="headerlink" title="队列的顺序存储结构"></a>队列的顺序存储结构</h2><h3 id="顺序存储概念"><a href="#顺序存储概念" class="headerlink" title="顺序存储概念"></a>顺序存储概念</h3><p>&#160;&#160;&#160;&#160;队列的顺序存储是指分配一块连续的存储单元来存放队列中的元素，并附设两个指针front和rear分别指向队头元素和队尾元素的位置。front指针(队头指针)指向队头元素，rear指针(队尾指针)指向队尾元素的下一个位置。</p>
-<p>队空条件：Q.front == Q.rear == 0<br>进队操作：首先判断是否队满，然后将值送到队尾指针指向的元素，将队尾指针加1.<br>出队操作：首先判断是否队空，然后取队头指针指向的元素，队头指针减1</p>
-<p>注意：不能将判断队满的条件设置为Q.rear == Maxsize，因为将一个满队列，进行若干次出队操作，此时如果进行入队操作，rear指针所指向的元素是不变的，而且大小为Maxsize，即队不满，但条件判断为溢出，这种溢出称为假溢出。</p>
-
-    </article>
-    <!-- license  -->
+            <main class="main index-page">
     
-        <div class="license-wrapper">
-            <p>原文作者：<a href="http://mnjic-503.github.io">小劉</a>
-            <p>原文链接：<a href="http://mnjic-503.github.io/post/e33417b4/">http://mnjic-503.github.io/post/e33417b4/</a>
-            <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/e33417b4/">数据结构——队列及其操作</a> -->
-            <p>发表日期：<a href="http://mnjic-503.github.io/post/e33417b4/">December 13th 2019, 10:20:08 pm</a>
-            <p>更新日期：<a href="http://mnjic-503.github.io/post/e33417b4/">December 15th 2019, 5:08:56 pm</a>
-            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/mnjic-503.github.io/post/31c11223/" >
+            
+                <span>SpringBoot的学习——Spring Boot配置</span>
+        </a>
+        <div class="abstract-content">
+            二、Spring Boot的配置1、配置文件SpringBoot使用的全局配置文件,名称不能可更改：
+
+application.properties
+application.yml
+
+配置文件的作用：修改SpringBoot自动配置的默认值；
+YAML(YAML Ain’t Markup Language)
+标记语言：以前配置文件，大都使用的是xxx.xml文件。YAML以数据为中心，比json、xml等更适合做配置文件。
+yml:
+12server:  port: 8081
+xml:
+123&lt;server&gt;     &lt;port&gt;8081&lt;/port&gt;...
         </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/03</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
     
     <!-- paginator  -->
-    <ul class="post-paginator">
-        <li class="next">
-            
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/mnjic-503.github.io/post/7ecaa940/" title= "SpringBoot的学习——初识SpringBoot框架">
-                    <div class="nextTitle">SpringBoot的学习——初识SpringBoot框架</div>
-                </a>
-            
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/mnjic-503.github.io/post/8a5a59b8/" title= "数据结构——二叉树及其操作">
-                    <div class="prevTitle">数据结构——二叉树及其操作</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
     
-    
-    <!-- partial('_partial/comment/changyan') -->
-    <!--PC版-->
-
-
-    
-    
-
-    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -545,24 +463,6 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper" style=
-    
-
-
-
-
-
-
-
-top:50vh;
-
-    >
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#队列介绍"><span class="toc-number">1.</span> <span class="toc-text">队列介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#队列的顺序存储结构"><span class="toc-number">2.</span> <span class="toc-text">队列的顺序存储结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#顺序存储概念"><span class="toc-number">2.1.</span> <span class="toc-text">顺序存储概念</span></a></li></ol></li></ol>
-    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -781,8 +681,6 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
-    
-        <script src="/mnjic-503.github.io/scripts/share.js" async></script>    
      
     </body>
 </html>
