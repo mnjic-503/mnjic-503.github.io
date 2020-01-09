@@ -401,6 +401,8 @@ height:50vh;
 </blockquote>
 <h2 id="2、微服务"><a href="#2、微服务" class="headerlink" title="2、微服务"></a>2、微服务</h2><p>2014年Martin Fowler发表了一篇关于微服务的博客，生动形象的介绍了一些微服务的思想和理念。(网址…)<br>微服务其实是一种架构风格，它提倡我们开发的一个应用应该是一组小型服务，每个小型服务运行在自己的进程内，可以通过Http的方式进行沟通。<br>单体应用(All In One)<br>微服务()<br>每一个功能元素最终都是一个可独立替换和独立升级的软件单元。</p>
 <p>[详细参照微服务文档。]</p>
+<a id="more"></a>
+
 <h2 id="3、环境约束"><a href="#3、环境约束" class="headerlink" title="3、环境约束"></a>3、环境约束</h2><p>-jdk1.8:SpringBoot 1.7及以上; java version “1.8.0_201”<br>-maven3.x:maven 3.3以上版本;Apache Maven 3.6.1<br>-IntelliJ IDEA 2019<br>-Spring Boot 1.5.9.RELEASE</p>
 <h3 id="1-maven设置"><a href="#1-maven设置" class="headerlink" title="1.maven设置"></a>1.maven设置</h3><p>给maven的settings.xml配置文件的profiles标签添加以下代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;profiles&gt;</span><br><span class="line">  &lt;profile&gt;</span><br><span class="line">    &lt;id&gt;jdk-1.8&lt;/id&gt;</span><br><span class="line">    &lt;activation&gt;</span><br><span class="line">      &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;</span><br><span class="line">      &lt;jdk&gt;1.8&lt;/jdk&gt;</span><br><span class="line">    &lt;/activation&gt;</span><br><span class="line">    &lt;properties&gt;</span><br><span class="line">      &lt;maven.complier.source&gt;1.8&lt;/maven.complier.source&gt;</span><br><span class="line">      &lt;maven.complier.target&gt;1.8&lt;/maven.complier.target&gt;</span><br><span class="line">      &lt;maven.complier.compilerVersion&gt;1.8&lt;/maven.complier.compilerVersion&gt;</span><br><span class="line">    &lt;/properties&gt;</span><br><span class="line">&lt;/profiles&gt;</span><br></pre></td></tr></table></figure>
@@ -455,7 +457,7 @@ height:50vh;
             <p>原文链接：<a href="http://mnjic-503.github.io/post/7ecaa940/">http://mnjic-503.github.io/post/7ecaa940/</a>
             <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/7ecaa940/">SpringBoot的学习——初识SpringBoot框架</a> -->
             <p>发表日期：<a href="http://mnjic-503.github.io/post/7ecaa940/">December 30th 2019, 11:25:26 pm</a>
-            <p>更新日期：<a href="http://mnjic-503.github.io/post/7ecaa940/">January 3rd 2020, 6:43:11 pm</a>
+            <p>更新日期：<a href="http://mnjic-503.github.io/post/7ecaa940/">January 9th 2020, 9:12:10 am</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -608,10 +610,6 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
-    
-    
     
     
     
