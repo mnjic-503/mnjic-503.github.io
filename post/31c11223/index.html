@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.7k</span>阅读时长: <span class="post-count reading-time">7 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.8k</span>阅读时长: <span class="post-count reading-time">7 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -506,17 +506,32 @@ height:50vh;
 <h2 id="7、外部配置加载顺序"><a href="#7、外部配置加载顺序" class="headerlink" title="7、外部配置加载顺序"></a>7、外部配置加载顺序</h2><p>SpringBoot 支持多种外部配置方式，高优先级的配置会覆盖低优先级的配置，而且会形成互补配置</p>
 <p>这些方式的优先级如下：<br><a href="">SpringBoot的官方文档</a></p>
 <ul>
-<li>1.==命令行参数==</li>
-<li>2.来自java:comp/env的JNDI属性</li>
-<li>3.java系统属性</li>
-<li>4.操作系统环境变量</li>
-<li>5.RandomValuePropertySource配置的random.*属性值</li>
-<li>==6.jar包外部的application-{profile}.properties或aplication.yml（带spring.profile）配置文件==</li>
-<li>==7.jar包内部的application-{profile}.properties或aplication.yml（带spring.profile）配置文件==</li>
-<li>==8.jar包外部的application.properties或application.yml（不带spring.profile）配置文件==</li>
-<li>==9.jar包内部的application.properties或application.yml（不带spring.profile）配置文件==</li>
-<li>10.@Configuration注解类上的@propertySource</li>
-<li>11.通过SpringApplication.setDefaultProperties指定的默认属性</li>
+<li><p>1.<em>命令行参数</em><br>多个配置用空格分开，采取–{配置项}的方式<br><img src="QQ%E5%9B%BE%E7%89%8720200112092401.png" alt="命令行参数"></p>
+</li>
+<li><p>2.来自java:comp/env的JNDI属性</p>
+</li>
+<li><p>3.java系统属性</p>
+</li>
+<li><p>4.操作系统环境变量</p>
+</li>
+<li><p>5.RandomValuePropertySource配置的random.*属性值</p>
+</li>
+</ul>
+<p>由jar包外向jar包内进行寻找；<br><strong>优先加载带prifile</strong></p>
+<ul>
+<li><em>6.jar包外部的application-{profile}.properties或aplication.yml（带spring.profile）配置文件</em></li>
+<li><em>7.jar包内部的application-{profile}.properties或aplication.yml（带spring.profile）配置文件</em><br>我们将配置文件application.properties修改为端口号为8083，访问路径为/boot<br><img src="QQ%E5%9B%BE%E7%89%8720200112093152.png" alt=""><br>将配置文件application.properties与项目jar包放在同一目录下<br><img src="QQ%E5%9B%BE%E7%89%8720200112092907.png" alt=""><br>直接运行jar包，不需要添加配置参数<br><img src="QQ%E5%9B%BE%E7%89%8720200112093007.png" alt=""></li>
+</ul>
+<p><strong>再加载不带profile</strong></p>
+<ul>
+<li><p><em>8.jar包外部的application.properties或application.yml（不带spring.profile）配置文件=</em></p>
+</li>
+<li><p><em>9.jar包内部的application.properties或application.yml（不带spring.profile）配置文件</em></p>
+</li>
+<li><p>10.@Configuration注解类上的@propertySource</p>
+</li>
+<li><p>11.通过SpringApplication.setDefaultProperties指定的默认属性</p>
+</li>
 </ul>
 
     </article>
@@ -527,7 +542,7 @@ height:50vh;
             <p>原文链接：<a href="http://mnjic-503.github.io/post/31c11223/">http://mnjic-503.github.io/post/31c11223/</a>
             <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/31c11223/">SpringBoot的学习——Spring Boot配置</a> -->
             <p>发表日期：<a href="http://mnjic-503.github.io/post/31c11223/">January 3rd 2020, 6:46:01 pm</a>
-            <p>更新日期：<a href="http://mnjic-503.github.io/post/31c11223/">January 11th 2020, 9:19:32 pm</a>
+            <p>更新日期：<a href="http://mnjic-503.github.io/post/31c11223/">January 12th 2020, 9:36:29 am</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
