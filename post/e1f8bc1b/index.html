@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>XiaoLiu&#39;s Studio</title>
+    <title>SpringBoot的学习——Web开发 · XiaoLiu&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/mnjic-503.github.io/" >XiaoLiu&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">SpringBoot的学习——Web开发</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/mnjic-503.github.io/>XiaoLiu's Studio.</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/mnjic-503.github.io/)"></div>
+    <div class="site-intro-img" style="background-image: url(/mnjic-503.github.io/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            SpringBoot的学习——Web开发
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">565</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/01/16</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,43 +399,79 @@
 </script>        
         <img class="loading" src="/mnjic-503.github.io/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/8a5a59b8/" >
-            
-                <span>数据结构——二叉树及其操作</span>
-        </a>
-        <div class="abstract-content">
-            <h2 id="二叉树介绍"><a href="#二叉树介绍" class="headerlink" title="二叉树介绍"></a>二叉树介绍</h2><blockquote>
-<p>&#160;&#160;&#160;&#160;二叉树是一种要的树形结构，其结构定义为：二叉树是n(&gt;=0)个结点的有限集，它或为空树(n=0)，或由一个根节点和两颗分别为根的左子树和右子树的、互不相交的二叉树组成。<br><img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fc0ad608e6c4b7452099bf44ae957572/9213b07eca806538fa88f4329adda144ad3482b5.jpg" alt=" ，&quot;二叉树&quot;"></p>
-</blockquote>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "二叉树">二叉树</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
-    
-</div>
-            
-        </div>
+            <meta charset="utf-8">
+<main class="main post-page">
+    <article class="article-entry">
+        <h1 id="SpringBoot的Web开发"><a href="#SpringBoot的Web开发" class="headerlink" title="SpringBoot的Web开发"></a>SpringBoot的Web开发</h1><h2 id="1、开发步骤"><a href="#1、开发步骤" class="headerlink" title="1、开发步骤"></a>1、开发步骤</h2><ul>
+<li>1、创建SpringBoot项目，选择我们需要的模块</li>
+<li>2、SpringBoot已经默认将这些场景配置好了，只需要在配置文件中指定少量的配置就可以运行起来</li>
+<li>3、自己编写业务代码</li>
+</ul>
+<p>自动配置原理？SpringBoot帮我们配置了什么？能修改那些配置？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xxxAutoConfiguration：帮我们给容器中自动配置组件</span><br><span class="line">xxxProperties：配置类来封装配置文件的内容</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、SpringBoot对静态资源的映射规则"><a href="#2、SpringBoot对静态资源的映射规则" class="headerlink" title="2、SpringBoot对静态资源的映射规则"></a>2、SpringBoot对静态资源的映射规则</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//可以设置和静态资源有关的参数，如缓存时间等</span><br><span class="line">@ConfigurationProperties(prefix = &quot;spring.resources&quot;, ignoreUnknownFields = false)</span><br><span class="line">public class ResourceProperties &#123;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">      @Override</span><br><span class="line">      public void addResourceHandlers(ResourceHandlerRegistry registry) &#123;</span><br><span class="line">          if (!this.resourceProperties.isAddMappings()) &#123;</span><br><span class="line">              logger.debug(&quot;Default resource handling disabled&quot;);</span><br><span class="line">              return;</span><br><span class="line">          &#125;</span><br><span class="line">          Duration cachePeriod = this.resourceProperties.getCache().getPeriod();</span><br><span class="line">          CacheControl cacheControl = this.resourceProperties.getCache().getCachecontrol().toHttpCacheControl();</span><br><span class="line">          if (!registry.hasMappingForPattern(&quot;/webjars/**&quot;)) &#123;</span><br><span class="line">              customizeResourceHandlerRegistration(registry.addResourceHandler(&quot;/webjars/**&quot;)</span><br><span class="line">                      .addResourceLocations(&quot;classpath:/META-INF/resources/webjars/&quot;)</span><br><span class="line">                      .setCachePeriod(getSeconds(cachePeriod)).setCacheControl(cacheControl));</span><br><span class="line">          &#125;</span><br><span class="line">          String staticPathPattern = this.mvcProperties.getStaticPathPattern();</span><br><span class="line">          if (!registry.hasMappingForPattern(staticPathPattern)) &#123;</span><br><span class="line">              customizeResourceHandlerRegistration(registry.addResourceHandler(staticPathPattern)</span><br><span class="line">                      .addResourceLocations(getResourceLocations(this.resourceProperties.getStaticLocations()))</span><br><span class="line">                      .setCachePeriod(getSeconds(cachePeriod)).setCacheControl(cacheControl));</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      //配置欢迎页映射</span><br><span class="line">      @Bean</span><br><span class="line">public WelcomePageHandlerMapping welcomePageHandlerMapping(ApplicationContext applicationContext,</span><br><span class="line">		FormattingConversionService mvcConversionService, ResourceUrlProvider mvcResourceUrlProvider) &#123;</span><br><span class="line">	WelcomePageHandlerMapping welcomePageHandlerMapping = new WelcomePageHandlerMapping(</span><br><span class="line">			new TemplateAvailabilityProviders(applicationContext), applicationContext, getWelcomePage(),</span><br><span class="line">			this.mvcProperties.getStaticPathPattern());</span><br><span class="line">	welcomePageHandlerMapping.setInterceptors(getInterceptors(mvcConversionService, mvcResourceUrlProvider));</span><br><span class="line">	return welcomePageHandlerMapping;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>1、所有/webjars/**，都去classpath:/META-INF/resources/webjars/下找资源<br>  webjars：以jar包的方式引入静态资源 <a href="http://www.webjars.org" target="_blank" rel="noopener">详情点击</a><br>  <img src="QQ%E5%9B%BE%E7%89%8720200116185728.png" alt=""></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 引入jquery-webjar --&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.webjars&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;jquery&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;3.4.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<p>  在访问的时候，只需要写webjars资源的名称<br>  localhost:8080/webjars/jquery/3.4.1/jquery.js</p>
+</li>
+<li><p>2、”/**”访问当前项目的任何资源(静态资源的文件夹)</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   &quot;classpath:/META-INF/resources/&quot;,</span><br><span class="line">&quot;classpath:/resources/&quot;, </span><br><span class="line">   &quot;classpath:/static/&quot;, </span><br><span class="line">   &quot;classpath:/public/&quot;</span><br><span class="line">   &quot;/&quot;  //当前项目的根路径</span><br></pre></td></tr></table></figure>
+
+<p>  访问路径：localhost:8080/abc === 默认去类路径下的静态资源文件夹寻找</p>
+</li>
+<li><p>3、欢迎页：静态资源文件夹下的所有index.html页面；被”/**”映射<br>  localhost:8080/     //找index.html页面</p>
+</li>
+<li><p>4、图片等静态资源可以去静态资源文件夹下寻找</p>
+</li>
+</ul>
+<h3 id="3、模板引擎"><a href="#3、模板引擎" class="headerlink" title="3、模板引擎"></a>3、模板引擎</h3><p>JSP、Velocity、FreeMarker、Thymeleaf；<br><img src="template-engine.png" alt=""><br>SpringBoot推荐使用Thymeleaf，语法简单，功能强大</p>
+<h4 id="1、引入Thymeleaf"><a href="#1、引入Thymeleaf" class="headerlink" title="1、引入Thymeleaf"></a>1、引入Thymeleaf</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2、Thymeleaf使用-amp-语法"><a href="#2、Thymeleaf使用-amp-语法" class="headerlink" title="2、Thymeleaf使用&amp;语法"></a>2、Thymeleaf使用&amp;语法</h4>
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://mnjic-503.github.io">小劉</a>
+            <p>原文链接：<a href="http://mnjic-503.github.io/post/e1f8bc1b/">http://mnjic-503.github.io/post/e1f8bc1b/</a>
+            <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/e1f8bc1b/">SpringBoot的学习——Web开发</a> -->
+            <p>发表日期：<a href="http://mnjic-503.github.io/post/e1f8bc1b/">January 16th 2020, 6:23:06 pm</a>
+            <p>更新日期：<a href="http://mnjic-503.github.io/post/e1f8bc1b/">January 17th 2020, 11:18:26 am</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/mnjic-503.github.io/post/151db900/" title= "SpringBoot的学习——SpringBoot与日志">
+                    <div class="prevTitle">SpringBoot的学习——SpringBoot与日志</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -462,6 +559,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot的Web开发"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot的Web开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、开发步骤"><span class="toc-number">1.1.</span> <span class="toc-text">1、开发步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、SpringBoot对静态资源的映射规则"><span class="toc-number">1.2.</span> <span class="toc-text">2、SpringBoot对静态资源的映射规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3、模板引擎"><span class="toc-number">1.2.1.</span> <span class="toc-text">3、模板引擎</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、引入Thymeleaf"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">1、引入Thymeleaf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、Thymeleaf使用-amp-语法"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">2、Thymeleaf使用&amp;语法</span></a></li></ol></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -732,6 +847,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/mnjic-503.github.io/scripts/share.js" async></script>    
      
     </body>
 </html>
