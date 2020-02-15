@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>数据结构——队列及其操作 · XiaoLiu&#39;s Studio</title>
+    <title>SpringBoot的学习——数据访问 · XiaoLiu&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/mnjic-503.github.io/" >XiaoLiu&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">数据结构——队列及其操作</a>
+                <a href="#" class="post-name">SpringBoot的学习——数据访问</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            数据结构——队列及其操作
+            SpringBoot的学习——数据访问
             <!-- 404 -->
             
         </h1>
@@ -266,20 +266,18 @@ height:50vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "队列">队列</a>
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">339</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">980</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/12/13</span>
+                    <span class="post-intro-time">2020/02/15</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -404,24 +402,48 @@ height:50vh;
             <meta charset="utf-8">
 <main class="main post-page">
     <article class="article-entry">
-        <h2 id="队列介绍"><a href="#队列介绍" class="headerlink" title="队列介绍"></a>队列介绍</h2><blockquote>
-<p>&#160;&#160;&#160;&#160;队列(Queue)。队列简称队，也是一种操作受限的线性表，队列有两个基础操作，一是<strong>队头出队</strong>，一是<strong>队尾入队</strong>。其操作的特性是先入先出(First In First Out,FIFO)，故又称<strong>先入先出的线性表</strong>。</p>
-</blockquote>
+        <h1 id="SpringBoot与数据访问"><a href="#SpringBoot与数据访问" class="headerlink" title="SpringBoot与数据访问"></a>SpringBoot与数据访问</h1><h2 id="1、JBDC"><a href="#1、JBDC" class="headerlink" title="1、JBDC"></a>1、JBDC</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
-<h2 id="队列的顺序存储结构"><a href="#队列的顺序存储结构" class="headerlink" title="队列的顺序存储结构"></a>队列的顺序存储结构</h2><h3 id="顺序存储概念"><a href="#顺序存储概念" class="headerlink" title="顺序存储概念"></a>顺序存储概念</h3><p>&#160;&#160;&#160;&#160;队列的顺序存储是指分配一块连续的存储单元来存放队列中的元素，并附设两个指针front和rear分别指向队头元素和队尾元素的位置。front指针(队头指针)指向队头元素，rear指针(队尾指针)指向队尾元素的下一个位置。</p>
-<p>队空条件：Q.front == Q.rear == 0<br>进队操作：首先判断是否队满，然后将值送到队尾指针指向的元素，将队尾指针加1.<br>出队操作：首先判断是否队空，然后取队头指针指向的元素，队头指针减1</p>
-<p>注意：不能将判断队满的条件设置为Q.rear == Maxsize，因为将一个满队列，进行若干次出队操作，此时如果进行入队操作，rear指针所指向的元素是不变的，而且大小为Maxsize，即队不满，但条件判断为溢出，这种溢出称为假溢出。</p>
+<p>配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    username: springbootDB</span><br><span class="line">    password: springbootDB</span><br><span class="line">    url: jdbc:mysql://47.106.164.78:3306/springbootDB</span><br><span class="line">    driver-class-name: com.mysql.jdbc.Driver</span><br></pre></td></tr></table></figure>
 
+<p>效果：<br>默认使用class com.zaxxer.hikari.HikariDataSource数据源<br>数据源的相关配置都在DataSourceProperties里面</p>
+<p>自动配置原理：org.springframework.boot.autoconfigure.jdbc</p>
+<ul>
+<li>1、参考DataSourceConfiguration，根据配置创建数据源，默认使用Tomcat连接池，可以使用spring.datasource.type指定自定义的数据源类型</li>
+<li>2、SpringBoot默认可以支持  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">org.apache.tomcat.jdbc.pool.DataSource</span><br><span class="line">HikariDataSource</span><br><span class="line">org.apache.commons.dbcp2.BasicDataSource</span><br></pre></td></tr></table></figure></li>
+<li>3、自定义数据源类型  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">   /**</span><br><span class="line"> * Generic DataSource configuration.</span><br><span class="line"> */</span><br><span class="line">@Configuration(proxyBeanMethods = false)</span><br><span class="line">@ConditionalOnMissingBean(DataSource.class)</span><br><span class="line">@ConditionalOnProperty(name = &quot;spring.datasource.type&quot;)</span><br><span class="line">static class Generic &#123;</span><br><span class="line"></span><br><span class="line">	@Bean</span><br><span class="line">	DataSource dataSource(DataSourceProperties properties) &#123;</span><br><span class="line">           //使用DataSourceBuilder创建数据源，利用反射创建相应type的数据源，并且绑定相关属性</span><br><span class="line">		return properties.initializeDataSourceBuilder().build();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>4、DataSourceInitializerInvoker：ApplicationListener<br>  作用：<br>  获取DataSourceInitializer类，initSchema()运行建表语句。<br>  默认只需要将文件命名为  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">schema-*sql</span><br><span class="line">data-*.sql</span><br><span class="line"></span><br><span class="line">默认规则：schema.sql schema-all.sql</span><br><span class="line">可以使用</span><br><span class="line">    schema:</span><br><span class="line">        - classpath:***.sql</span><br><span class="line">指定位置</span><br></pre></td></tr></table></figure></li>
+<li>5、操作数据库：自动配置了JdbcTemplate操作数据库  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class HelloController &#123;</span><br><span class="line">    @Autowired</span><br><span class="line">    JdbcTemplate jdbcTemplate;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @ResponseBody</span><br><span class="line">    @GetMapping(&quot;/query&quot;)</span><br><span class="line">    public Map&lt;String,Object&gt; map()&#123;</span><br><span class="line">        List&lt;Map&lt;String, Object&gt;&gt; list = jdbcTemplate.queryForList(&quot;select * FROM department&quot;);</span><br><span class="line">        return list.get(0);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2、整合Druid-amp-配置数据源监控"><a href="#2、整合Druid-amp-配置数据源监控" class="headerlink" title="2、整合Druid&amp;配置数据源监控"></a>2、整合Druid&amp;配置数据源监控</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">导入Druid数据源</span><br><span class="line">@Configuration</span><br><span class="line">public class DruidConfig &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    @ConfigurationProperties(prefix = &quot;spring.datasource&quot;)</span><br><span class="line">    @Bean</span><br><span class="line">    public DataSource druid()&#123;</span><br><span class="line">        return new DruidDataSource();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //配置Druid监控</span><br><span class="line">    //1、配置一个管理后台的Servlet</span><br><span class="line">    @Bean</span><br><span class="line">    public ServletRegistrationBean&lt;StatViewServlet&gt; statViewServletServlet()&#123;</span><br><span class="line">        ServletRegistrationBean&lt;StatViewServlet&gt; bean = new ServletRegistrationBean&lt;&gt;(new StatViewServlet(), &quot;/druid/*&quot;);</span><br><span class="line">        Map&lt;String,String&gt; initParams = new HashMap&lt;&gt;();</span><br><span class="line">        //登录的用户名、密码</span><br><span class="line">        initParams.put(&quot;loginUsername&quot;,&quot;admin&quot;);</span><br><span class="line">        initParams.put(&quot;loginPassword&quot;,&quot;admin&quot;);</span><br><span class="line">        //允许登录,默认所有访问</span><br><span class="line">        initParams.put(&quot;allow&quot;,&quot;&quot;);</span><br><span class="line">        //禁止访问</span><br><span class="line">//        initParams.put(&quot;deny&quot;,&quot;192.168.1.104&quot;);</span><br><span class="line">        bean.setInitParameters(initParams);</span><br><span class="line">        return bean;</span><br><span class="line">    &#125;</span><br><span class="line">    //2、配置监控的filter</span><br><span class="line">    @Bean</span><br><span class="line">    public FilterRegistrationBean&lt;WebStatFilter&gt; webStatFilter()&#123;</span><br><span class="line">        FilterRegistrationBean&lt;WebStatFilter&gt; bean = new FilterRegistrationBean&lt;&gt;();</span><br><span class="line">        bean.setFilter(new WebStatFilter());</span><br><span class="line">        Map&lt;String,String&gt; initParams = new HashMap&lt;&gt;();</span><br><span class="line">        initParams.put(&quot;exclusions&quot;,&quot;*.js,*.css,/druid/*&quot;);</span><br><span class="line">        bean.setInitParameters(initParams);</span><br><span class="line">        bean.setUrlPatterns(Arrays.asList(&quot;/*&quot;));</span><br><span class="line">        return bean;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>Druid配置文件，采用application.yml的方式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">spring:</span><br><span class="line">  datasource:</span><br><span class="line">    username: springbootDB</span><br><span class="line">    password: springbootDB</span><br><span class="line">    url: jdbc:mysql://47.106.164.78:3306/springbootDB</span><br><span class="line">    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="line">    #加载sql配置文件</span><br><span class="line">    initialization-mode: always</span><br><span class="line">    type: com.alibaba.druid.pool.DruidDataSource</span><br><span class="line">    #在数据库中创建表</span><br><span class="line">#    schema:</span><br><span class="line">#      - classpath:department.sql</span><br><span class="line">    #数据源的其他配置</span><br><span class="line">    initialSize: 5</span><br><span class="line">    minIdle: 5</span><br><span class="line">    maxActive: 20</span><br><span class="line">    maxWait: 60000</span><br><span class="line">    timeBetweenEvictionRunsMillis: 60000</span><br><span class="line">    minEvictableIdleTimeMillis: 300000</span><br><span class="line">    validationQuery: SELECT 1 FROM DUAL</span><br><span class="line">    testWhileIdle: true</span><br><span class="line">    testOnBorrow: false</span><br><span class="line">    testOnReturn: false</span><br><span class="line">    poolPreparedStatements: true</span><br><span class="line">    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，&apos;wall&apos;用于防火墙</span><br><span class="line">    filters: stat,wall,slf4j</span><br><span class="line">    maxPoolPreparedStatementPerConnectionSize: 20</span><br><span class="line">    useGlobalDataSourceStat: true</span><br><span class="line">    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500</span><br></pre></td></tr></table></figure>
+<h2 id="3、整合MyBatis"><a href="#3、整合MyBatis" class="headerlink" title="3、整合MyBatis"></a>3、整合MyBatis</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.1.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="QQ%E5%9B%BE%E7%89%8720200215201133.png" alt=""></p>
+<p><strong>步骤</strong>：</p>
+<ul>
+<li>1、配置数据源相关属性</li>
+<li>2、给数据库建表</li>
+<li>3、创建JavaBean</li>
+</ul>
+<h2 id="4、MyBatis注解版"><a href="#4、MyBatis注解版" class="headerlink" title="4、MyBatis注解版"></a>4、MyBatis注解版</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//指定这是一个操作数据库的Mapper</span><br><span class="line">@Mapper</span><br><span class="line">public interface DepartmentMapper &#123;</span><br><span class="line">    //查询所有部门数据</span><br><span class="line">    @Select(&quot;select * from department where id=#&#123;id&#125;&quot;)</span><br><span class="line">    public Department getDeptById(Integer id);</span><br><span class="line">    @Delete(&quot;delete form department where id=#&#123;id&#125;&quot;)</span><br><span class="line">    public int deleteDeptId(Integer id);</span><br><span class="line">    //使用自增ID，keyProperty指定主键</span><br><span class="line">    @Options(useGeneratedKeys = true,keyProperty = &quot;id&quot;)</span><br><span class="line">    @Insert((&quot;insert into department(departmentName) values (#&#123;departmentName&#125;)&quot;))</span><br><span class="line">    public int insertDept(Department department);</span><br><span class="line">    @Update(&quot;update department set departmentName=#&#123;departmentName&#125; where id=#&#123;id&#125;&quot;)</span><br><span class="line">    public int updateDept(Department department);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>问题</strong>：<br>自定义MyBatis的配置规则,只需要在容器中添加一个ConfigurationCustomizer组件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@MapperScan(value = &quot;com.lt.springboot.mapper&quot;)</span><br><span class="line">@org.springframework.context.annotation.Configuration</span><br><span class="line">public class MybatisConfig &#123;</span><br><span class="line">    @Bean</span><br><span class="line">    public ConfigurationCustomizer configurationCustomizer()&#123;</span><br><span class="line">        return new ConfigurationCustomizer()&#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void customize(Configuration configuration) &#123;</span><br><span class="line">                //开启驼峰命名法</span><br><span class="line">                configuration.setMapUnderscoreToCamelCase(true);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">使用MapperScan批量扫描mapper接口文件</span><br><span class="line">@MapperScan(value = &quot;com.lt.springboot.mapper&quot;)</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://mnjic-503.github.io">小劉</a>
-            <p>原文链接：<a href="http://mnjic-503.github.io/post/e33417b4/">http://mnjic-503.github.io/post/e33417b4/</a>
-            <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/e33417b4/">数据结构——队列及其操作</a> -->
-            <p>发表日期：<a href="http://mnjic-503.github.io/post/e33417b4/">December 13th 2019, 10:20:08 pm</a>
-            <p>更新日期：<a href="http://mnjic-503.github.io/post/e33417b4/">December 15th 2019, 5:08:56 pm</a>
+            <p>原文链接：<a href="http://mnjic-503.github.io/post/6fafbaf6/">http://mnjic-503.github.io/post/6fafbaf6/</a>
+            <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/6fafbaf6/">SpringBoot的学习——数据访问</a> -->
+            <p>发表日期：<a href="http://mnjic-503.github.io/post/6fafbaf6/">February 15th 2020, 10:03:33 am</a>
+            <p>更新日期：<a href="http://mnjic-503.github.io/post/6fafbaf6/">February 15th 2020, 8:59:17 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -429,17 +451,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/mnjic-503.github.io/post/7ecaa940/" title= "SpringBoot的学习——初识SpringBoot框架">
-                    <div class="nextTitle">SpringBoot的学习——初识SpringBoot框架</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/mnjic-503.github.io/post/8a5a59b8/" title= "数据结构——二叉树及其操作">
-                    <div class="prevTitle">数据结构——二叉树及其操作</div>
+                <a href= "/mnjic-503.github.io/post/2ab7ae4b/" title= "SpringBoot的学习——SpringBoot与Docker">
+                    <div class="prevTitle">SpringBoot的学习——SpringBoot与Docker</div>
                 </a>
             
         </li>
@@ -561,7 +578,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#队列介绍"><span class="toc-number">1.</span> <span class="toc-text">队列介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#队列的顺序存储结构"><span class="toc-number">2.</span> <span class="toc-text">队列的顺序存储结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#顺序存储概念"><span class="toc-number">2.1.</span> <span class="toc-text">顺序存储概念</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot与数据访问"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot与数据访问</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、JBDC"><span class="toc-number">1.1.</span> <span class="toc-text">1、JBDC</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、整合Druid-amp-配置数据源监控"><span class="toc-number">1.2.</span> <span class="toc-text">2、整合Druid&amp;配置数据源监控</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、整合MyBatis"><span class="toc-number">1.3.</span> <span class="toc-text">3、整合MyBatis</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、MyBatis注解版"><span class="toc-number">1.4.</span> <span class="toc-text">4、MyBatis注解版</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
