@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>XiaoLiu&#39;s Studio</title>
+    <title>Android的学习——Bug汇总篇 · XiaoLiu&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/mnjic-503.github.io/" >XiaoLiu&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Android的学习——Bug汇总篇</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/mnjic-503.github.io/>XiaoLiu's Studio.</a>
 </header>
@@ -220,24 +231,68 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/mnjic-503.github.io/)"></div>
+    <div class="site-intro-img" style="background-image: url(/mnjic-503.github.io/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            Android的学习——Bug汇总篇
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">144</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/02/19</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,340 +393,63 @@
 </script>        
         <img class="loading" src="/mnjic-503.github.io/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/39e5a184/" >
-            
-                <span>Android的学习——Bug汇总篇</span>
-        </a>
-        <div class="abstract-content">
-            此贴将会汇总Android学习过程中出现的Bug或者配置问题。
-1.Android Studio工具 fbc快捷键的使用文章参考
-
-打开Android Studio的settings，搜索Live Templates找到fbc点击设置
-将模板文本(Template Text)设置为  $resId$ = ($cast$) findViewById(R.id.$resId$);
-点击Edit variables，将参数设置改为下图所示：  
-点击OK确认即可
-
-2、引入OKhttp框架调用Request请求的Builder()方法出现版本要求解决方法：
-
-在方法上添加@RequiresAp...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/19</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/fb176540/" >
-            
-                <span>Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”</span>
-        </a>
-        <div class="abstract-content">
-            <h1 id="OkHttp简介"><a href="#OkHttp简介" class="headerlink" title="OkHttp简介"></a>OkHttp简介</h1><h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><blockquote>
-<p>OKHttp是一款高效的HTTP客户端，支持连接同一地址的链接共享同一个socket，通过连接池来减小响应延迟，还有透明的GZIP压缩，请求缓存等优势，其核心主要有路由、连接协议、拦截器、代理、安全性认证、连接池以及网络适配，拦截器主要是指添加，移除或者转换请求或者回应的头部信息.</p>
-</blockquote>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/19</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Android">Android</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "框架">框架</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "OkHttp">OkHttp</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/6fafbaf6/" >
-            
-                <span>SpringBoot的学习——数据访问</span>
-        </a>
-        <div class="abstract-content">
-            <h1 id="SpringBoot与数据访问"><a href="#SpringBoot与数据访问" class="headerlink" title="SpringBoot与数据访问"></a>SpringBoot与数据访问</h1><h1 id="JBDC"><a href="#JBDC" class="headerlink" title="JBDC"></a>JBDC</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt; </span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/2ab7ae4b/" >
-            
-                <span>SpringBoot的学习——SpringBoot与Docker</span>
-        </a>
-        <div class="abstract-content">
-            <h1 id="SpringBoot与Docker"><a href="#SpringBoot与Docker" class="headerlink" title="SpringBoot与Docker"></a>SpringBoot与Docker</h1><h1 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h1><blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口</p>
-</blockquote>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/e1f8bc1b/" >
-            
-                <span>SpringBoot的学习——Web开发</span>
-        </a>
-        <div class="abstract-content">
-            <p>SpringBoot的Web开发</p>
-<h1 id="1、开发步骤"><a href="#1、开发步骤" class="headerlink" title="1、开发步骤"></a>1、开发步骤</h1><ul>
-<li>1、创建SpringBoot项目，选择我们需要的模块</li>
-<li>2、SpringBoot已经默认将这些场景配置好了，只需要在配置文件中指定少量的配置就可以运行起来</li>
-<li>3、自己编写业务代码</li>
-</ul>
-<p>自动配置原理？SpringBoot帮我们配置了什么？能修改那些配置？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xxxAutoConfiguration：帮我们给容器中自动配置组件</span><br><span class="line">xxxProperties：配置类来封装配置文件的内容</span><br></pre></td></tr></table></figure>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/151db900/" >
-            
-                <span>SpringBoot的学习——SpringBoot与日志</span>
-        </a>
-        <div class="abstract-content">
-            <h1 id="Spring-Boot与日志"><a href="#Spring-Boot与日志" class="headerlink" title="Spring Boot与日志"></a>Spring Boot与日志</h1><h1 id="日志框架"><a href="#日志框架" class="headerlink" title="日志框架"></a>日志框架</h1>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/12</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/92ca56a4/" >
-            
-                <span>SpringBoot的学习——Bug汇总篇</span>
-        </a>
-        <div class="abstract-content">
-            <p><strong>此贴将会汇总SpringBoot学习过程中出现的Bug或者配置问题。</strong></p>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/11</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Bug">Bug</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/31c11223/" >
-            
-                <span>SpringBoot的学习——Spring Boot配置</span>
-        </a>
-        <div class="abstract-content">
-            <h1 id="Spring-Boot的配置"><a href="#Spring-Boot的配置" class="headerlink" title="Spring Boot的配置"></a>Spring Boot的配置</h1><h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>SpringBoot使用的全局配置文件,名称不能可更改：</p>
+            <meta charset="utf-8">
+<main class="main post-page">
+    <article class="article-entry">
+        <p><strong>此贴将会汇总Android学习过程中出现的Bug或者配置问题。</strong></p>
+<h3 id="1-Android-Studio工具-fbc快捷键的使用"><a href="#1-Android-Studio工具-fbc快捷键的使用" class="headerlink" title="1.Android Studio工具 fbc快捷键的使用"></a>1.Android Studio工具 fbc快捷键的使用</h3><p><a href="https://blog.csdn.net/xuwei7746521/article/details/80818426" target="_blank" rel="noopener">文章参考</a></p>
 <ul>
-<li>application.properties</li>
-<li>application.yml</li>
+<li>打开Android Studio的settings，搜索Live Templates找到fbc点击设置</li>
+<li>将模板文本(Template Text)设置为<br>  <code>$resId$ = ($cast$) findViewById(R.id.$resId$);</code></li>
+<li>点击Edit variables，将参数设置改为下图所示：<br>  <img src="QQ%E5%9B%BE%E7%89%8720200219194446.png" alt=""></li>
+<li>点击OK确认即可</li>
 </ul>
-<p>配置文件的作用：修改SpringBoot自动配置的默认值；</p>
-<p>YAML(YAML Ain’t Markup Language)</p>
-<p>标记语言：以前配置文件，大都使用的是xxx.xml文件。YAML以数据为中心，比json、xml等更适合做配置文件。</p>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-</div>
-            
-        </div>
+<h3 id="2、引入OKhttp框架调用Request请求的Builder-方法出现版本要求"><a href="#2、引入OKhttp框架调用Request请求的Builder-方法出现版本要求" class="headerlink" title="2、引入OKhttp框架调用Request请求的Builder()方法出现版本要求"></a>2、引入OKhttp框架调用Request请求的Builder()方法出现版本要求</h3><p>解决方法：</p>
+<ul>
+<li>在方法上添加@RequiresApi(api = Build.VERSION_CODES.KITKAT)注解</li>
+<li>或者修改项目的build.gradle文件，将defaultConfig中minSdkVersion字段改为19</li>
+</ul>
+
     </article>
+    <!-- license  -->
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/7ecaa940/" >
-            
-                <span>SpringBoot的学习——初识SpringBoot框架</span>
-        </a>
-        <div class="abstract-content">
-            <h1 id="Spring-Boot-入门"><a href="#Spring-Boot-入门" class="headerlink" title="Spring Boot 入门"></a>Spring Boot 入门</h1><h1 id="Spring-Boot简介"><a href="#Spring-Boot简介" class="headerlink" title="Spring Boot简介"></a>Spring Boot简介</h1><blockquote>
-<p>是简化Spring应用开发的一个框架；<br>是对整个Spring技术栈的整合；<br>是J2EE开发的一站式解决方案；</p>
-</blockquote>
-<h1 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h1><p>2014年Martin Fowler发表了一篇关于微服务的博客，生动形象的介绍了一些微服务的思想和理念。(网址…)<br>微服务其实是一种架构风格，它提倡我们开发的一个应用应该是一组小型服务，每个小型服务运行在自己的进程内，可以通过Http的方式进行沟通。<br>单体应用(All In One)<br>微服务()<br>每一个功能元素最终都是一个可独立替换和独立升级的软件单元。</p>
-<p>[详细参照微服务文档。]</p>
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://mnjic-503.github.io">小劉</a>
+            <p>原文链接：<a href="http://mnjic-503.github.io/post/39e5a184/">http://mnjic-503.github.io/post/39e5a184/</a>
+            <!-- <p>原文链接：<a href="http://mnjic-503.github.io/post/39e5a184/">Android的学习——Bug汇总篇</a> -->
+            <p>发表日期：<a href="http://mnjic-503.github.io/post/39e5a184/">February 19th 2020, 7:37:54 pm</a>
+            <p>更新日期：<a href="http://mnjic-503.github.io/post/39e5a184/">February 19th 2020, 7:49:51 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/12/30</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/e33417b4/" >
-            
-                <span>数据结构——队列及其操作</span>
-        </a>
-        <div class="abstract-content">
-            <h2 id="队列介绍"><a href="#队列介绍" class="headerlink" title="队列介绍"></a>队列介绍</h2><blockquote>
-<p>&#160;&#160;&#160;&#160;队列(Queue)。队列简称队，也是一种操作受限的线性表，队列有两个基础操作，一是<strong>队头出队</strong>，一是<strong>队尾入队</strong>。其操作的特性是先入先出(First In First Out,FIFO)，故又称<strong>先入先出的线性表</strong>。</p>
-</blockquote>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/12/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "队列">队列</a>
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
-    
-</div>
-            
-        </div>
-    </article>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/mnjic-503.github.io/post/fb176540/" title= "Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”">
+                    <div class="prevTitle">Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/mnjic-503.github.io/archives/page/2/">2</a><a class="extend next" rel="next" href="/mnjic-503.github.io/archives/page/2/">NEXT &amp;#62;</a>
-    </nav>
     
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -759,6 +537,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Android-Studio工具-fbc快捷键的使用"><span class="toc-number">1.</span> <span class="toc-text">1.Android Studio工具 fbc快捷键的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、引入OKhttp框架调用Request请求的Builder-方法出现版本要求"><span class="toc-number">2.</span> <span class="toc-text">2、引入OKhttp框架调用Request请求的Builder()方法出现版本要求</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1105,6 +901,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/mnjic-503.github.io/scripts/share.js" async></script>    
      
     </body>
 </html>

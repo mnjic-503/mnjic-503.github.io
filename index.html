@@ -359,19 +359,47 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/mnjic-503.github.io/post/39e5a184/" >
+            
+                <span>Android的学习——Bug汇总篇</span>
+        </a>
+        <div class="abstract-content">
+            此贴将会汇总Android学习过程中出现的Bug或者配置问题。
+1.Android Studio工具 fbc快捷键的使用文章参考
+
+打开Android Studio的settings，搜索Live Templates找到fbc点击设置
+将模板文本(Template Text)设置为  $resId$ = ($cast$) findViewById(R.id.$resId$);
+点击Edit variables，将参数设置改为下图所示：  
+点击OK确认即可
+
+2、引入OKhttp框架调用Request请求的Builder()方法出现版本要求解决方法：
+
+在方法上添加@RequiresAp...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/19</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/mnjic-503.github.io/post/fb176540/" >
             
                 <span>Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”</span>
         </a>
         <div class="abstract-content">
-            OkHttp简介1、简介
-OKHttp是一款高效的HTTP客户端，支持连接同一地址的链接共享同一个socket，通过连接池来减小响应延迟，还有透明的GZIP压缩，请求缓存等优势，其核心主要有路由、连接协议、拦截器、代理、安全性认证、连接池以及网络适配，拦截器主要是指添加，移除或者转换请求或者回应的头部信息
-
-
-这个库也是square开源的一个网络请求库(okhttp内部依赖okio)。现在已被Google使用在Android源码上了，可见其强大。
-
-
-关于网络请求库，现在应该还有很多人在使用android-async-http。他内部使用的是HttpClient，但是Google在6.0...
+            <h1 id="OkHttp简介"><a href="#OkHttp简介" class="headerlink" title="OkHttp简介"></a>OkHttp简介</h1><h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><blockquote>
+<p>OKHttp是一款高效的HTTP客户端，支持连接同一地址的链接共享同一个socket，通过连接池来减小响应延迟，还有透明的GZIP压缩，请求缓存等优势，其核心主要有路由、连接协议、拦截器、代理、安全性认证、连接池以及网络适配，拦截器主要是指添加，移除或者转换请求或者回应的头部信息.</p>
+</blockquote>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -433,12 +461,9 @@ OKHttp是一款高效的HTTP客户端，支持连接同一地址的链接共享�
                 <span>SpringBoot的学习——SpringBoot与Docker</span>
         </a>
         <div class="abstract-content">
-            SpringBoot与DockerDocker简介
-Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口
-
-Docker核心概念
-docker主机(Host)：一个物理或虚拟的机器用于执行Docker守护进程和容器，Docker直接安装在操作系统上
-docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP (https://docs.docker.com/reference/api/docker...
+            <h1 id="SpringBoot与Docker"><a href="#SpringBoot与Docker" class="headerlink" title="SpringBoot与Docker"></a>SpringBoot与Docker</h1><h1 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h1><blockquote>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口</p>
+</blockquote>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -532,7 +557,7 @@ docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP
                 <span>SpringBoot的学习——Bug汇总篇</span>
         </a>
         <div class="abstract-content">
-            <p>此贴将会汇总SpringBoot学习过程中出现的Bug或者配置问题。</p>
+            <p><strong>此贴将会汇总SpringBoot学习过程中出现的Bug或者配置问题。</strong></p>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -544,6 +569,8 @@ docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "SpringBoot">SpringBoot</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Bug">Bug</a>
     
 </div>
             
@@ -643,40 +670,7 @@ docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
-    
         <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "队列">队列</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/8a5a59b8/" >
-            
-                <span>数据结构——二叉树及其操作</span>
-        </a>
-        <div class="abstract-content">
-            <h2 id="二叉树介绍"><a href="#二叉树介绍" class="headerlink" title="二叉树介绍"></a>二叉树介绍</h2><blockquote>
-<p>&#160;&#160;&#160;&#160;二叉树是一种要的树形结构，其结构定义为：二叉树是n(&gt;=0)个结点的有限集，它或为空树(n=0)，或由一个根节点和两颗分别为根的左子树和右子树的、互不相交的二叉树组成。<br><img src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=fc0ad608e6c4b7452099bf44ae957572/9213b07eca806538fa88f4329adda144ad3482b5.jpg" alt=" ，&quot;二叉树&quot;"></p>
-</blockquote>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "二叉树">二叉树</a>
     
         <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
     
@@ -1018,9 +1012,30 @@ docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 13
+        Total : 14
         </div>
         <!-- search  -->
         
@@ -1033,6 +1048,11 @@ docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/mnjic-503.github.io/post/39e5a184/" >Android的学习——Bug汇总篇</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1113,21 +1133,23 @@ docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="SpringBoot"><span class="iconfont-archer">&#xe606;</span>SpringBoot</span>
+    
+        <span class="sidebar-tag-name" data-tags="Bug"><span class="iconfont-archer">&#xe606;</span>Bug</span>
+    
         <span class="sidebar-tag-name" data-tags="Android"><span class="iconfont-archer">&#xe606;</span>Android</span>
     
         <span class="sidebar-tag-name" data-tags="框架"><span class="iconfont-archer">&#xe606;</span>框架</span>
     
         <span class="sidebar-tag-name" data-tags="OkHttp"><span class="iconfont-archer">&#xe606;</span>OkHttp</span>
     
-        <span class="sidebar-tag-name" data-tags="SpringBoot"><span class="iconfont-archer">&#xe606;</span>SpringBoot</span>
-    
         <span class="sidebar-tag-name" data-tags="Hexo"><span class="iconfont-archer">&#xe606;</span>Hexo</span>
     
-        <span class="sidebar-tag-name" data-tags="二叉树"><span class="iconfont-archer">&#xe606;</span>二叉树</span>
+        <span class="sidebar-tag-name" data-tags="队列"><span class="iconfont-archer">&#xe606;</span>队列</span>
     
         <span class="sidebar-tag-name" data-tags="数据结构"><span class="iconfont-archer">&#xe606;</span>数据结构</span>
     
-        <span class="sidebar-tag-name" data-tags="队列"><span class="iconfont-archer">&#xe606;</span>队列</span>
+        <span class="sidebar-tag-name" data-tags="二叉树"><span class="iconfont-archer">&#xe606;</span>二叉树</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
