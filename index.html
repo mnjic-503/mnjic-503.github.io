@@ -359,12 +359,52 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/mnjic-503.github.io/post/fb176540/" >
+            
+                <span>Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”</span>
+        </a>
+        <div class="abstract-content">
+            OkHttp简介1、简介
+OKHttp是一款高效的HTTP客户端，支持连接同一地址的链接共享同一个socket，通过连接池来减小响应延迟，还有透明的GZIP压缩，请求缓存等优势，其核心主要有路由、连接协议、拦截器、代理、安全性认证、连接池以及网络适配，拦截器主要是指添加，移除或者转换请求或者回应的头部信息
+
+
+这个库也是square开源的一个网络请求库(okhttp内部依赖okio)。现在已被Google使用在Android源码上了，可见其强大。
+
+
+关于网络请求库，现在应该还有很多人在使用android-async-http。他内部使用的是HttpClient，但是Google在6.0...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Android">Android</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "框架">框架</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "OkHttp">OkHttp</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/mnjic-503.github.io/post/6fafbaf6/" >
             
                 <span>SpringBoot的学习——数据访问</span>
         </a>
         <div class="abstract-content">
-            <h1 id="SpringBoot与数据访问"><a href="#SpringBoot与数据访问" class="headerlink" title="SpringBoot与数据访问"></a>SpringBoot与数据访问</h1><h2 id="1、JBDC"><a href="#1、JBDC" class="headerlink" title="1、JBDC"></a>1、JBDC</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+            <h1 id="SpringBoot与数据访问"><a href="#SpringBoot与数据访问" class="headerlink" title="SpringBoot与数据访问"></a>SpringBoot与数据访问</h1><h1 id="JBDC"><a href="#JBDC" class="headerlink" title="JBDC"></a>JBDC</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt; </span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -393,10 +433,12 @@ height:50vh;
                 <span>SpringBoot的学习——SpringBoot与Docker</span>
         </a>
         <div class="abstract-content">
-            1、SpringBoot与Docker1、简介2、Docker核心概念
+            SpringBoot与DockerDocker简介
+Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口
+
+Docker核心概念
 docker主机(Host)：一个物理或虚拟的机器用于执行Docker守护进程和容器，Docker直接安装在操作系统上
-docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP (https://docs.docker.com/reference/api/docker_remote_api)与Docker的守护进程通信
-docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码控制中的代码仓库。DockerHub(https://hub.docker.com)提供了...
+docker客户端(Client)：客户端通过命令行或其他工具使用Docker AP (https://docs.docker.com/reference/api/docker...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -425,7 +467,8 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
                 <span>SpringBoot的学习——Web开发</span>
         </a>
         <div class="abstract-content">
-            <h1 id="SpringBoot的Web开发"><a href="#SpringBoot的Web开发" class="headerlink" title="SpringBoot的Web开发"></a>SpringBoot的Web开发</h1><h2 id="1、开发步骤"><a href="#1、开发步骤" class="headerlink" title="1、开发步骤"></a>1、开发步骤</h2><ul>
+            <p>SpringBoot的Web开发</p>
+<h1 id="1、开发步骤"><a href="#1、开发步骤" class="headerlink" title="1、开发步骤"></a>1、开发步骤</h1><ul>
 <li>1、创建SpringBoot项目，选择我们需要的模块</li>
 <li>2、SpringBoot已经默认将这些场景配置好了，只需要在配置文件中指定少量的配置就可以运行起来</li>
 <li>3、自己编写业务代码</li>
@@ -460,7 +503,7 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
                 <span>SpringBoot的学习——SpringBoot与日志</span>
         </a>
         <div class="abstract-content">
-            <h1 id="Spring-Boot与日志"><a href="#Spring-Boot与日志" class="headerlink" title="Spring Boot与日志"></a>Spring Boot与日志</h1><h2 id="1、日志框架"><a href="#1、日志框架" class="headerlink" title="1、日志框架"></a>1、日志框架</h2>
+            <h1 id="Spring-Boot与日志"><a href="#Spring-Boot与日志" class="headerlink" title="Spring Boot与日志"></a>Spring Boot与日志</h1><h1 id="日志框架"><a href="#日志框架" class="headerlink" title="日志框架"></a>日志框架</h1>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -518,7 +561,7 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
                 <span>SpringBoot的学习——Spring Boot配置</span>
         </a>
         <div class="abstract-content">
-            <h1 id="二、Spring-Boot的配置"><a href="#二、Spring-Boot的配置" class="headerlink" title="二、Spring Boot的配置"></a>二、Spring Boot的配置</h1><h2 id="1、配置文件"><a href="#1、配置文件" class="headerlink" title="1、配置文件"></a>1、配置文件</h2><p>SpringBoot使用的全局配置文件,名称不能可更改：</p>
+            <h1 id="Spring-Boot的配置"><a href="#Spring-Boot的配置" class="headerlink" title="Spring Boot的配置"></a>Spring Boot的配置</h1><h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>SpringBoot使用的全局配置文件,名称不能可更改：</p>
 <ul>
 <li>application.properties</li>
 <li>application.yml</li>
@@ -554,10 +597,10 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
                 <span>SpringBoot的学习——初识SpringBoot框架</span>
         </a>
         <div class="abstract-content">
-            <h1 id="一、Spring-Boot-入门"><a href="#一、Spring-Boot-入门" class="headerlink" title="一、Spring Boot 入门"></a>一、Spring Boot 入门</h1><h2 id="1、Spring-Boot简介"><a href="#1、Spring-Boot简介" class="headerlink" title="1、Spring Boot简介"></a>1、Spring Boot简介</h2><blockquote>
+            <h1 id="Spring-Boot-入门"><a href="#Spring-Boot-入门" class="headerlink" title="Spring Boot 入门"></a>Spring Boot 入门</h1><h1 id="Spring-Boot简介"><a href="#Spring-Boot简介" class="headerlink" title="Spring Boot简介"></a>Spring Boot简介</h1><blockquote>
 <p>是简化Spring应用开发的一个框架；<br>是对整个Spring技术栈的整合；<br>是J2EE开发的一站式解决方案；</p>
 </blockquote>
-<h2 id="2、微服务"><a href="#2、微服务" class="headerlink" title="2、微服务"></a>2、微服务</h2><p>2014年Martin Fowler发表了一篇关于微服务的博客，生动形象的介绍了一些微服务的思想和理念。(网址…)<br>微服务其实是一种架构风格，它提倡我们开发的一个应用应该是一组小型服务，每个小型服务运行在自己的进程内，可以通过Http的方式进行沟通。<br>单体应用(All In One)<br>微服务()<br>每一个功能元素最终都是一个可独立替换和独立升级的软件单元。</p>
+<h1 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h1><p>2014年Martin Fowler发表了一篇关于微服务的博客，生动形象的介绍了一些微服务的思想和理念。(网址…)<br>微服务其实是一种架构风格，它提倡我们开发的一个应用应该是一组小型服务，每个小型服务运行在自己的进程内，可以通过Http的方式进行沟通。<br>单体应用(All In One)<br>微服务()<br>每一个功能元素最终都是一个可独立替换和独立升级的软件单元。</p>
 <p>[详细参照微服务文档。]</p>
         </div>
         <div class="abstract-post-meta">
@@ -636,35 +679,6 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
         <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "二叉树">二叉树</a>
     
         <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "数据结构">数据结构</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/mnjic-503.github.io/post/893ade6e/" >
-            
-                <span>Windows系统下搭建Hexo博客</span>
-        </a>
-        <div class="abstract-content">
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>偶然间晚上失眠，看到了B站一位大神的博客教学，在本地搭建一个Hexo框架的博客，激起了我的兴趣，这位大神就是——CodeSheep，他以视频的方式给我们演示在MacOs系统上搭建博客的步骤，大家感兴趣的可以去他的公众号或者个人网站查看更多视频，相信会对我们的编程水平有很大的提高，大神本身也很有趣，给我们解答了很多工作上学习上的疑惑，大家可以支持以下！废话少说，让我们开始吧！</p>
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Hexo">Hexo</a>
     
 </div>
             
@@ -1001,9 +1015,12 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
     
     
     
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 12
+        Total : 13
         </div>
         <!-- search  -->
         
@@ -1016,6 +1033,11 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/19</span><a class="archive-post-title" href= "/mnjic-503.github.io/post/fb176540/" >Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1090,6 +1112,12 @@ docker仓库(Registry)：Docker仓库用来保存镜像，可以理解为代码�
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Android"><span class="iconfont-archer">&#xe606;</span>Android</span>
+    
+        <span class="sidebar-tag-name" data-tags="框架"><span class="iconfont-archer">&#xe606;</span>框架</span>
+    
+        <span class="sidebar-tag-name" data-tags="OkHttp"><span class="iconfont-archer">&#xe606;</span>OkHttp</span>
     
         <span class="sidebar-tag-name" data-tags="SpringBoot"><span class="iconfont-archer">&#xe606;</span>SpringBoot</span>
     
