@@ -346,6 +346,106 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/mnjic-503.github.io/post/af758cf/" >
+            
+                <span>Android的学习——WebView的使用</span>
+        </a>
+        <div class="abstract-content">
+            <p>Android 与 H5 的本质是java 和 JS 互调</p>
+<h1 id="initWebView"><a href="#initWebView" class="headerlink" title="initWebView"></a>initWebView</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">private void initWebView() &#123;</span><br><span class="line">    WebView webView = new WebView(this);</span><br><span class="line">    WebSettings webSettings = webView.getSettings();</span><br><span class="line">    //设置支持javaScript</span><br><span class="line">    webSettings.setJavaScriptEnabled(true);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    //设置不调用浏览器-自定义浏览器</span><br><span class="line">    webView.setWebViewClient(new WebViewClient());</span><br><span class="line">    //加载网页-本地网页或网络网页</span><br><span class="line">    webView .loadUrl(&quot;http://47.106.164.78:8080/reader/feeds&quot;);</span><br><span class="line"></span><br><span class="line">    setContentView(webView);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/08/10</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Android">Android</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "框架">框架</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "WebView">WebView</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/mnjic-503.github.io/post/df560112/" >
+            
+                <span>Android的学习——RecyclerView的使用</span>
+        </a>
+        <div class="abstract-content">
+            <h1 id="RecyclerView是什么"><a href="#RecyclerView是什么" class="headerlink" title="RecyclerView是什么"></a>RecyclerView是什么</h1><p>RecyclerView是一种新的视图，目标是为任何基于适配器的视图提供相似的渲染方式，他作为呗ListView和GridView控件的继承者，在最新的support-v7中提供支持。</p>
+<p>RecyclerView架构，提供了一种插拔式的体验，高度的解耦，十分灵活，通过设置他提供的不同LayoutManager，ItemDecoration，ItemAnimator实现各种效果</p>
+<p>总之ListView和GridView能做的事RecyclerView都能做，并且能实现瀑布流效果</p>
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/08/10</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Android">Android</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "框架">框架</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "RecyclerView">RecyclerView</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/mnjic-503.github.io/post/39e5a184/" >
+            
+                <span>Android的学习——Bug汇总篇</span>
+        </a>
+        <div class="abstract-content">
+            <p><strong>此贴将会汇总Android学习过程中出现的Bug或者配置问题。</strong></p>
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Android">Android</a>
+    
+        <a class="post-tag" href="javascript:void(0);" target="_blank" rel="noopener" data-tags = "Bug">Bug</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/mnjic-503.github.io/post/fb176540/" >
             
                 <span>Android的学习——OKHttp框架 “ hexo n Android的学习——OKHttp框”</span>
@@ -623,9 +723,37 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 14
+        Total : 16
         </div>
         <!-- search  -->
         
@@ -638,6 +766,16 @@
     
     <div class="archive-year"> 2020 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/10</span><a class="archive-post-title" href= "/mnjic-503.github.io/post/af758cf/" >Android的学习——WebView的使用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/10</span><a class="archive-post-title" href= "/mnjic-503.github.io/post/df560112/" >Android的学习——RecyclerView的使用</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -729,9 +867,13 @@
     
         <span class="sidebar-tag-name" data-tags="OkHttp"><span class="iconfont-archer">&#xe606;</span>OkHttp</span>
     
-        <span class="sidebar-tag-name" data-tags="SpringBoot"><span class="iconfont-archer">&#xe606;</span>SpringBoot</span>
-    
         <span class="sidebar-tag-name" data-tags="Bug"><span class="iconfont-archer">&#xe606;</span>Bug</span>
+    
+        <span class="sidebar-tag-name" data-tags="WebView"><span class="iconfont-archer">&#xe606;</span>WebView</span>
+    
+        <span class="sidebar-tag-name" data-tags="RecyclerView"><span class="iconfont-archer">&#xe606;</span>RecyclerView</span>
+    
+        <span class="sidebar-tag-name" data-tags="SpringBoot"><span class="iconfont-archer">&#xe606;</span>SpringBoot</span>
     
         <span class="sidebar-tag-name" data-tags="Hexo"><span class="iconfont-archer">&#xe606;</span>Hexo</span>
     
