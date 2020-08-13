@@ -352,7 +352,7 @@
         </a>
         <div class="abstract-content">
             <p>Android 与 H5 的本质是java 和 JS 互调</p>
-<h1 id="initWebView"><a href="#initWebView" class="headerlink" title="initWebView"></a>initWebView</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">private void initWebView() &#123;</span><br><span class="line">    WebView webView = new WebView(this);</span><br><span class="line">    WebSettings webSettings = webView.getSettings();</span><br><span class="line">    //设置支持javaScript</span><br><span class="line">    webSettings.setJavaScriptEnabled(true);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    //设置不调用浏览器-自定义浏览器</span><br><span class="line">    webView.setWebViewClient(new WebViewClient());</span><br><span class="line">    //加载网页-本地网页或网络网页</span><br><span class="line">    webView .loadUrl(&quot;http://47.106.164.78:8080/reader/feeds&quot;);</span><br><span class="line"></span><br><span class="line">    setContentView(webView);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="initWebView"><a href="#initWebView" class="headerlink" title="initWebView"></a>initWebView</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">initWebView</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    WebView webView = <span class="keyword">new</span> WebView(<span class="keyword">this</span>);</span><br><span class="line">    WebSettings webSettings = webView.getSettings();</span><br><span class="line">    <span class="comment">//设置支持javaScript</span></span><br><span class="line">    webSettings.setJavaScriptEnabled(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//设置不调用浏览器-自定义浏览器</span></span><br><span class="line">    webView.setWebViewClient(<span class="keyword">new</span> WebViewClient());</span><br><span class="line">    <span class="comment">//加载网页-本地网页或网络网页</span></span><br><span class="line">    webView .loadUrl(<span class="string">"http://47.106.164.78:8080/reader/feeds"</span>);</span><br><span class="line"></span><br><span class="line">    setContentView(webView);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -877,11 +877,11 @@
     
         <span class="sidebar-tag-name" data-tags="Hexo"><span class="iconfont-archer">&#xe606;</span>Hexo</span>
     
-        <span class="sidebar-tag-name" data-tags="二叉树"><span class="iconfont-archer">&#xe606;</span>二叉树</span>
+        <span class="sidebar-tag-name" data-tags="队列"><span class="iconfont-archer">&#xe606;</span>队列</span>
     
         <span class="sidebar-tag-name" data-tags="数据结构"><span class="iconfont-archer">&#xe606;</span>数据结构</span>
     
-        <span class="sidebar-tag-name" data-tags="队列"><span class="iconfont-archer">&#xe606;</span>队列</span>
+        <span class="sidebar-tag-name" data-tags="二叉树"><span class="iconfont-archer">&#xe606;</span>二叉树</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
